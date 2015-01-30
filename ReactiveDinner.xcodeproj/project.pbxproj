@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		530421289344330150B683E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53042407B7C985CF54215CEB /* main.m */; };
+		5304212ACF06505F7CA0C229 /* DinnerServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 530429E5C21A38C4265D2E73 /* DinnerServiceImpl.m */; };
+		530422E1AFEFC408088AA25F /* DinnerManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53042DC94C5517A841079B4B /* DinnerManagerTests.m */; };
+		53042380DA4B406ED1A5ADD4 /* DinnerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 53042656DFB8023A079A5CAF /* DinnerManager.m */; };
+		5304239FF8FC31C3888AF318 /* DinnerListControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53042A5B59BCBFF81ADD35C9 /* DinnerListControllerTests.m */; };
+		5304258C1352611FCF48AA0C /* ReactiveDinnerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 530424A06BEA775DEFB51F04 /* ReactiveDinnerTests.m */; };
+		530425B210E31484A64D0B68 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53042DEB44CA2A53A3986147 /* Images.xcassets */; };
+		53042738BA5E24BEC760E3DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53042E70D3166AA6380778A9 /* AppDelegate.m */; };
+		530427543E1093FB46577C50 /* DinnerListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5304235E51912E3E709B8194 /* DinnerListController.xib */; };
+		530428BDA8960BFEE35D4A50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53042A99F087BA6253CF81CB /* Main.storyboard */; };
+		53042991C47F73DE4192BA95 /* DinnerListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53042736FE304B8183475667 /* DinnerListController.m */; };
+		53042B51693FC54A25787471 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53042A1D43EB95F45FD83DDC /* ViewController.m */; };
+		53042DA1B2F4982D99B8FFF5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53042D30BB5AF0F4EEFC780B /* LaunchScreen.xib */; };
+		53042E46C6B0D687D3F4CF68 /* DinnerDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 53042F4C43A3B495823E4977 /* DinnerDTO.m */; };
+		690C4408064A7DB926522FE3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D52FB9ECBA78067E1A73B6 /* libPods.a */; };
+		ECC67DD659D55298ACD0837B /* libPods-ReactiveDinnerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D9B8F50D2997D4DCAE2B9B5 /* libPods-ReactiveDinnerTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		530424EFFB90B3115B659B7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53042DEC437169D171977940 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53042D66B1F57BEF8F91225A;
+			remoteInfo = ReactiveDinner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1766416336101819A82258E8 /* Pods-ReactiveDinnerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveDinnerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveDinnerTests/Pods-ReactiveDinnerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1B61279D55C9A47F1630E641 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		254926700A15C6EB061E081E /* Pods-ReactiveDinnerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveDinnerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveDinnerTests/Pods-ReactiveDinnerTests.release.xcconfig"; sourceTree = "<group>"; };
+		5304234B6C57A8AB4E483D9D /* DinnerServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DinnerServiceImpl.h; sourceTree = "<group>"; };
+		5304235E51912E3E709B8194 /* DinnerListController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DinnerListController.xib; sourceTree = "<group>"; };
+		53042407B7C985CF54215CEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		53042462A86D87BFE4D4A3B9 /* DinnerService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DinnerService.h; sourceTree = "<group>"; };
+		530424A06BEA775DEFB51F04 /* ReactiveDinnerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactiveDinnerTests.m; sourceTree = "<group>"; };
+		530424D88906CFED072686FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		53042523F0C948065B808F21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		53042656DFB8023A079A5CAF /* DinnerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DinnerManager.m; sourceTree = "<group>"; };
+		530426DDA9DE1127EE3C1760 /* DinnerListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DinnerListController.h; sourceTree = "<group>"; };
+		53042736FE304B8183475667 /* DinnerListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DinnerListController.m; sourceTree = "<group>"; };
+		530427ABC85443F23084E6FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		53042981545D0DBDFF2A32FD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		530429A5F29E7F1EFD54E503 /* ReactiveDinner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveDinner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		530429E5C21A38C4265D2E73 /* DinnerServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DinnerServiceImpl.m; sourceTree = "<group>"; };
+		53042A1D43EB95F45FD83DDC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		53042A5B59BCBFF81ADD35C9 /* DinnerListControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DinnerListControllerTests.m; sourceTree = "<group>"; };
+		53042B81D2D7BF4239BDBFB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		53042D87F4E35D50F39B9A8C /* DinnerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DinnerManager.h; sourceTree = "<group>"; };
+		53042DA22C32D4CC9B157999 /* DinnerDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DinnerDTO.h; sourceTree = "<group>"; };
+		53042DC94C5517A841079B4B /* DinnerManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DinnerManagerTests.m; sourceTree = "<group>"; };
+		53042DEB44CA2A53A3986147 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		53042E56541F592B5CEEE0AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		53042E70D3166AA6380778A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		53042EE3351D128D4311B4B3 /* ReactiveDinnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveDinnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53042F4C43A3B495823E4977 /* DinnerDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DinnerDTO.m; sourceTree = "<group>"; };
+		75D52FB9ECBA78067E1A73B6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D9B8F50D2997D4DCAE2B9B5 /* libPods-ReactiveDinnerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactiveDinnerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A55584580B9A0161EFD69F2A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		530425D6816DD224941A0147 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECC67DD659D55298ACD0837B /* libPods-ReactiveDinnerTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5304297DD58169CC17CB150F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				690C4408064A7DB926522FE3 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		342148E096292874C8660917 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1766416336101819A82258E8 /* Pods-ReactiveDinnerTests.debug.xcconfig */,
+				254926700A15C6EB061E081E /* Pods-ReactiveDinnerTests.release.xcconfig */,
+				1B61279D55C9A47F1630E641 /* Pods.debug.xcconfig */,
+				A55584580B9A0161EFD69F2A /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3C2D62D1834BC20F0A058072 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D9B8F50D2997D4DCAE2B9B5 /* libPods-ReactiveDinnerTests.a */,
+				75D52FB9ECBA78067E1A73B6 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		530420BDDBEC55FB1A8FB90E /* ReactiveDinnerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5304217BBC645F02A90AFC35 /* Supporting Files */,
+				530424A06BEA775DEFB51F04 /* ReactiveDinnerTests.m */,
+			);
+			path = ReactiveDinnerTests;
+			sourceTree = "<group>";
+		};
+		5304217BBC645F02A90AFC35 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				53042E56541F592B5CEEE0AB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5304249A45410745A1B5464E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				530429A5F29E7F1EFD54E503 /* ReactiveDinner.app */,
+				53042EE3351D128D4311B4B3 /* ReactiveDinnerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		530424D52A3CF3241168DD77 /* Dinners */ = {
+			isa = PBXGroup;
+			children = (
+				53042DC94C5517A841079B4B /* DinnerManagerTests.m */,
+				53042656DFB8023A079A5CAF /* DinnerManager.m */,
+				53042D87F4E35D50F39B9A8C /* DinnerManager.h */,
+				53042462A86D87BFE4D4A3B9 /* DinnerService.h */,
+				530429E5C21A38C4265D2E73 /* DinnerServiceImpl.m */,
+				5304234B6C57A8AB4E483D9D /* DinnerServiceImpl.h */,
+			);
+			path = Dinners;
+			sourceTree = "<group>";
+		};
+		530428D07088782644B1A5BC = {
+			isa = PBXGroup;
+			children = (
+				5304249A45410745A1B5464E /* Products */,
+				53042B6910AF5B600BEBADF2 /* ReactiveDinner */,
+				530420BDDBEC55FB1A8FB90E /* ReactiveDinnerTests */,
+				342148E096292874C8660917 /* Pods */,
+				3C2D62D1834BC20F0A058072 /* Frameworks */,
+				53042A5B59BCBFF81ADD35C9 /* DinnerListControllerTests.m */,
+				53042736FE304B8183475667 /* DinnerListController.m */,
+				530426DDA9DE1127EE3C1760 /* DinnerListController.h */,
+				5304235E51912E3E709B8194 /* DinnerListController.xib */,
+				53042F4C43A3B495823E4977 /* DinnerDTO.m */,
+				53042DA22C32D4CC9B157999 /* DinnerDTO.h */,
+			);
+			sourceTree = "<group>";
+		};
+		530428DC4DB1280F089F9F87 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				53042B81D2D7BF4239BDBFB9 /* Info.plist */,
+				53042407B7C985CF54215CEB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		53042B6910AF5B600BEBADF2 /* ReactiveDinner */ = {
+			isa = PBXGroup;
+			children = (
+				530428DC4DB1280F089F9F87 /* Supporting Files */,
+				53042DEB44CA2A53A3986147 /* Images.xcassets */,
+				53042D30BB5AF0F4EEFC780B /* LaunchScreen.xib */,
+				530424D88906CFED072686FA /* AppDelegate.h */,
+				53042E70D3166AA6380778A9 /* AppDelegate.m */,
+				53042A99F087BA6253CF81CB /* Main.storyboard */,
+				53042981545D0DBDFF2A32FD /* ViewController.h */,
+				53042A1D43EB95F45FD83DDC /* ViewController.m */,
+				530424D52A3CF3241168DD77 /* Dinners */,
+			);
+			path = ReactiveDinner;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5304283DD4AE15EE34EC39F4 /* ReactiveDinnerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53042FDB538C352FF127C025 /* Build configuration list for PBXNativeTarget "ReactiveDinnerTests" */;
+			buildPhases = (
+				EDCF8F1C620C34A32FFC24C9 /* Check Pods Manifest.lock */,
+				530421581531EF67A80FD252 /* Sources */,
+				530425D6816DD224941A0147 /* Frameworks */,
+				53042D2396E7D78E1968D30D /* Resources */,
+				251AF4546F927456175E30E3 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5304233D5CBE6061894414EA /* PBXTargetDependency */,
+			);
+			name = ReactiveDinnerTests;
+			productName = ReactiveDinnerTests;
+			productReference = 53042EE3351D128D4311B4B3 /* ReactiveDinnerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		53042D66B1F57BEF8F91225A /* ReactiveDinner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 530420B8761D6BE7E94F65CB /* Build configuration list for PBXNativeTarget "ReactiveDinner" */;
+			buildPhases = (
+				567291BC29047E00C0B61921 /* Check Pods Manifest.lock */,
+				5304292B6E245F609C14B476 /* Sources */,
+				5304297DD58169CC17CB150F /* Frameworks */,
+				530429BFAC9C53D56F78B3D2 /* Resources */,
+				D9644F436A01ABFF394FE496 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReactiveDinner;
+			productName = ReactiveDinner;
+			productReference = 530429A5F29E7F1EFD54E503 /* ReactiveDinner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53042DEC437169D171977940 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Marek Mościchowski";
+			};
+			buildConfigurationList = 5304206AD0D571F1377DBC3C /* Build configuration list for PBXProject "ReactiveDinner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 530428D07088782644B1A5BC;
+			productRefGroup = 5304249A45410745A1B5464E /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+			);
+			projectRoot = "";
+			targets = (
+				53042D66B1F57BEF8F91225A /* ReactiveDinner */,
+				5304283DD4AE15EE34EC39F4 /* ReactiveDinnerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		530429BFAC9C53D56F78B3D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				530425B210E31484A64D0B68 /* Images.xcassets in Resources */,
+				53042DA1B2F4982D99B8FFF5 /* LaunchScreen.xib in Resources */,
+				530428BDA8960BFEE35D4A50 /* Main.storyboard in Resources */,
+				530427543E1093FB46577C50 /* DinnerListController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53042D2396E7D78E1968D30D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		251AF4546F927456175E30E3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactiveDinnerTests/Pods-ReactiveDinnerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		567291BC29047E00C0B61921 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D9644F436A01ABFF394FE496 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDCF8F1C620C34A32FFC24C9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		530421581531EF67A80FD252 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5304258C1352611FCF48AA0C /* ReactiveDinnerTests.m in Sources */,
+				5304239FF8FC31C3888AF318 /* DinnerListControllerTests.m in Sources */,
+				530422E1AFEFC408088AA25F /* DinnerManagerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5304292B6E245F609C14B476 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				530421289344330150B683E5 /* main.m in Sources */,
+				53042738BA5E24BEC760E3DC /* AppDelegate.m in Sources */,
+				53042B51693FC54A25787471 /* ViewController.m in Sources */,
+				53042380DA4B406ED1A5ADD4 /* DinnerManager.m in Sources */,
+				5304212ACF06505F7CA0C229 /* DinnerServiceImpl.m in Sources */,
+				53042991C47F73DE4192BA95 /* DinnerListController.m in Sources */,
+				53042E46C6B0D687D3F4CF68 /* DinnerDTO.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5304233D5CBE6061894414EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53042D66B1F57BEF8F91225A /* ReactiveDinner */;
+			targetProxy = 530424EFFB90B3115B659B7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		53042A99F087BA6253CF81CB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53042523F0C948065B808F21 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		53042D30BB5AF0F4EEFC780B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				530427ABC85443F23084E6FB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		53042009B71A8FEEF5466A9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		530421680BFF706CB9E8AA11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		53042833F2BB1F25CD2D838E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B61279D55C9A47F1630E641 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ReactiveDinner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+			};
+			name = Debug;
+		};
+		53042A97B0CB6172F0C2AC9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 254926700A15C6EB061E081E /* Pods-ReactiveDinnerTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ReactiveDinner.app/ReactiveDinner";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ReactiveDinnerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+		53042D7F23A2795D0F503B7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A55584580B9A0161EFD69F2A /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ReactiveDinner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+			};
+			name = Release;
+		};
+		53042F78D9A2368137FE068E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1766416336101819A82258E8 /* Pods-ReactiveDinnerTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ReactiveDinner.app/ReactiveDinner";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ReactiveDinnerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5304206AD0D571F1377DBC3C /* Build configuration list for PBXProject "ReactiveDinner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53042009B71A8FEEF5466A9F /* Debug */,
+				530421680BFF706CB9E8AA11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		530420B8761D6BE7E94F65CB /* Build configuration list for PBXNativeTarget "ReactiveDinner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53042833F2BB1F25CD2D838E /* Debug */,
+				53042D7F23A2795D0F503B7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		53042FDB538C352FF127C025 /* Build configuration list for PBXNativeTarget "ReactiveDinnerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53042F78D9A2368137FE068E /* Debug */,
+				53042A97B0CB6172F0C2AC9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 53042DEC437169D171977940 /* Project object */;
+}
