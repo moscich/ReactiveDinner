@@ -12,20 +12,24 @@
 	<dict>
 		<key>4777517724073B68ED7197A1C801309A2347C8B7</key>
 		<string>https://bitbucket.org/moscich/extraviewcontrollers.git</string>
+		<key>BCF485E4242A106BE62688AB692E2912AAF313E2</key>
+		<string>https://github.com/moscich/ReactiveDinner.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ReactiveDinner/ReactiveDinner.xcworkspace</string>
+	<string>ReactiveDinner.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>4777517724073B68ED7197A1C801309A2347C8B7</key>
 		<string>../..</string>
+		<key>BCF485E4242A106BE62688AB692E2912AAF313E2</key>
+		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://bitbucket.org/moscich/extraviewcontrollers.git</string>
+	<string>https://github.com/moscich/ReactiveDinner.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>4777517724073B68ED7197A1C801309A2347C8B7</string>
+	<string>BCF485E4242A106BE62688AB692E2912AAF313E2</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -34,7 +38,15 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>4777517724073B68ED7197A1C801309A2347C8B7</string>
 			<key>IDESourceControlWCCName</key>
-			<string>test</string>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BCF485E4242A106BE62688AB692E2912AAF313E2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ReactiveDinner</string>
 		</dict>
 	</array>
 </dict>

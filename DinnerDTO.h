@@ -4,8 +4,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <JSONModel/JSONModel.h>
 
 
-@interface DinnerDTO : NSObject
+@interface DinnerDTO : JSONModel
 @property(nonatomic, copy) NSString *title;
+
+- (BOOL)isEqual:(id)other;
+
+- (BOOL)isEqualToDto:(DinnerDTO *)dto;
+
+- (NSUInteger)hash;
 @end

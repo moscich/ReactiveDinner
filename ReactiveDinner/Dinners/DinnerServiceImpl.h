@@ -8,11 +8,12 @@
 
 @class AFHTTPSessionManager;
 @class AFHTTPRequestOperation;
+@class DinnerSessionManager;
 
 
 @interface DinnerServiceImpl : NSObject <DinnerService>
-@property(nonatomic, strong) AFHTTPSessionManager *sessionManager;
+@property(nonatomic, strong) DinnerSessionManager *sessionManager;
 
-- (id)initWithSessionManager:(AFHTTPSessionManager *)manager;
+- (id)initWithSessionManager:(DinnerSessionManager *)manager;
 
 @end

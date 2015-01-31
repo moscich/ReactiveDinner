@@ -24,10 +24,10 @@
   @weakify(self)
   RAC(self, dinners) = [RACSignal createSignal:^RACDisposable *(id <RACSubscriber> subscriber) {
     @strongify(self)
-    [self.service GET:@"/dinners" parameters:nil success:^(id responseObject) {
-      [subscriber sendNext:responseObject];
+    [self.service getDinners:^(NSArray *dinners) {
+      [subscriber sendNext:dinners];
       [subscriber sendCompleted];
-    }         failure:nil];
+    }];
     return nil;
   }];
 }
