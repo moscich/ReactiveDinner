@@ -4,7 +4,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Typhoon/Typhoon.h>
 
-
-@interface DinnerAssembly : NSObject
+@interface DinnerAssembly : TyphoonAssembly
 @end

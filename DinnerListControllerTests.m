@@ -11,28 +11,31 @@
 #import <OCMock/OCMockObject.h>
 #import <AFNetworking/AFHTTPSessionManager.h>
 #import <OCMock/OCMStubRecorder.h>
+#import <Typhoon/TyphoonBlockComponentFactory.h>
 #import "DinnerListController.h"
-#import "DinnerManager.h"
-#import "DinnerServiceImpl.h"
 #import "OCMArg.h"
 #import "DinnerDTO.h"
-#import "DinnerSessionManager.h"
+#import "DinnerAssembly.h"
+#import "TyphoonPatcher.h"
 
 @interface DinnerListControllerTests : XCTestCase
 
+@property(nonatomic, strong) DinnerListController *dinnerListController;
+@property(nonatomic, strong) TyphoonBlockComponentFactory *factory;
 @end
 
 @implementation DinnerListControllerTests
 
+- (void)setUp {
+  self.factory = [TyphoonBlockComponentFactory factoryWithAssembly:[DinnerAssembly assembly]];
+}
+
 - (void)test_viewDidLoad_whenSucceed_showReceivedDinnersInTableView {
-  id stubSessionManager = [self stubTestDinnersSessionMenager];
+  [self patchAFnetworkingWithStub];
 
-  DinnerSessionManager *dinnerSessionManager = [[DinnerSessionManager alloc] initWithSessionManager:stubSessionManager];
-  id <DinnerService> dinnerService = [[DinnerServiceImpl alloc] initWithSessionManager:dinnerSessionManager];
-  DinnerManager *dinnerManager = [[DinnerManager alloc] initWithService:dinnerService];
-  DinnerListController *dinnerListController = [[DinnerListController alloc] initWithDinnerManager:dinnerManager];
+  self.dinnerListController = [self.factory componentForType:[DinnerListController class]];
 
-  UIView *view = [dinnerListController view];
+  UIView *view = [self.dinnerListController view];
 
   UITableView *tableView = (UITableView *) [self subViewOfClass:[UITableView class] inView:view];
   int numberOfCells = [tableView.dataSource tableView:tableView numberOfRowsInSection:0];
@@ -42,6 +45,14 @@
   XCTAssertEqual(numberOfCells, 2);
   XCTAssertEqualObjects(tableViewCell1.textLabel.text, @"Test dinner 1");
   XCTAssertEqualObjects(tableViewCell2.textLabel.text, @"Test dinner 2");
+}
+
+- (void)patchAFnetworkingWithStub {
+  TyphoonPatcher *patcher = [TyphoonPatcher new];
+  [patcher patchDefinitionWithKey:@"AFHttpSessionManager" withObject:^id {
+    return [self stubTestDinnersSessionMenager];
+  }];
+  [self.factory attachPostProcessor:patcher];
 }
 
 - (id)stubTestDinnersSessionMenager {
