@@ -6,6 +6,7 @@
 #import "DinnerListController.h"
 #import "DinnerManager.h"
 #import "DinnerDTO.h"
+#import "AddDinnerViewController.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import <libextobjc/EXTScope.h>
 
@@ -34,6 +35,14 @@
   }];
 
   [self.dinnerManager askForDinners];
+
+  self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:nil action:nil];
+  RACCommand *command = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
+    AddDinnerViewController *addDinnerViewController = [AddDinnerViewController new];
+    [self presentViewController:addDinnerViewController animated:YES completion:nil];
+    return [RACSignal empty];
+  }];
+  self.navigationItem.rightBarButtonItem.rac_command = command;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

@@ -8,15 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
-#import <OCMock/OCMockObject.h>
-#import <AFNetworking/AFHTTPSessionManager.h>
-#import <OCMock/OCMStubRecorder.h>
-#import <Typhoon/TyphoonBlockComponentFactory.h>
+#import <OCMock/OCMock.h>
+#import <Typhoon/Typhoon.h>
+#import <AFNetworking/AFNetworking.h>
 #import "DinnerListController.h"
-#import "OCMArg.h"
 #import "DinnerDTO.h"
 #import "DinnerAssembly.h"
 #import "TyphoonPatcher.h"
+#import "UIButton+UnitTests.h"
+#import "AddDinnerViewController.h"
 
 @interface DinnerListControllerTests : XCTestCase
 
@@ -31,7 +31,7 @@
 }
 
 - (void)test_viewDidLoad_whenSucceed_showReceivedDinnersInTableView {
-  [self patchAFnetworkingWithStub];
+  [self patchNetworkCallsWithObject:[self stubTestDinnersSessionMenager]];
 
   self.dinnerListController = [self.factory componentForType:[DinnerListController class]];
 
@@ -47,10 +47,23 @@
   XCTAssertEqualObjects(tableViewCell2.textLabel.text, @"Test dinner 2");
 }
 
-- (void)patchAFnetworkingWithStub {
+- (void)test_whenAddDinnerButtonTapped_always_showAddDinnerViewController{
+  self.dinnerListController = [self.factory componentForType:[DinnerListController class]];
+  [self.dinnerListController view];
+  id partialMock = [OCMockObject partialMockForObject:self.dinnerListController];
+  [[partialMock expect] presentViewController:[OCMArg checkWithBlock:^BOOL(id obj) {
+    return [obj isKindOfClass:[AddDinnerViewController class]];
+  }] animated:YES completion:nil];
+
+  [self.dinnerListController.navigationItem.rightBarButtonItem simulateTap];
+
+  [partialMock verify];
+}
+
+- (void)patchNetworkCallsWithObject:(id)object {
   TyphoonPatcher *patcher = [TyphoonPatcher new];
   [patcher patchDefinitionWithKey:@"AFHttpSessionManager" withObject:^id {
-    return [self stubTestDinnersSessionMenager];
+    return object;
   }];
   [self.factory attachPostProcessor:patcher];
 }

@@ -13,12 +13,14 @@
 		530422E1AFEFC408088AA25F /* DinnerManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53042DC94C5517A841079B4B /* DinnerManagerTests.m */; };
 		53042380DA4B406ED1A5ADD4 /* DinnerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 53042656DFB8023A079A5CAF /* DinnerManager.m */; };
 		5304239FF8FC31C3888AF318 /* DinnerListControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53042A5B59BCBFF81ADD35C9 /* DinnerListControllerTests.m */; };
+		53042515B4300ADEA5B67E71 /* UIButton+UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 530421F791B1E655EE9DDED2 /* UIButton+UnitTests.m */; };
 		5304258C1352611FCF48AA0C /* ReactiveDinnerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 530424A06BEA775DEFB51F04 /* ReactiveDinnerTests.m */; };
 		530425B210E31484A64D0B68 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53042DEB44CA2A53A3986147 /* Images.xcassets */; };
 		53042738BA5E24BEC760E3DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53042E70D3166AA6380778A9 /* AppDelegate.m */; };
 		530427543E1093FB46577C50 /* DinnerListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5304235E51912E3E709B8194 /* DinnerListController.xib */; };
 		530428BDA8960BFEE35D4A50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53042A99F087BA6253CF81CB /* Main.storyboard */; };
 		53042991C47F73DE4192BA95 /* DinnerListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53042736FE304B8183475667 /* DinnerListController.m */; };
+		530429EE934CC0469B4B4107 /* AddDinnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 530424B0804A92337D56BEE9 /* AddDinnerViewController.m */; };
 		53042B51693FC54A25787471 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53042A1D43EB95F45FD83DDC /* ViewController.m */; };
 		53042CA84980298729B7F3B0 /* DinnerAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 53042F4737924AB9CAF13437 /* DinnerAssembly.m */; };
 		53042DA1B2F4982D99B8FFF5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53042D30BB5AF0F4EEFC780B /* LaunchScreen.xib */; };
@@ -42,17 +44,21 @@
 		1766416336101819A82258E8 /* Pods-ReactiveDinnerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveDinnerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveDinnerTests/Pods-ReactiveDinnerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1B61279D55C9A47F1630E641 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		254926700A15C6EB061E081E /* Pods-ReactiveDinnerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveDinnerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveDinnerTests/Pods-ReactiveDinnerTests.release.xcconfig"; sourceTree = "<group>"; };
+		530421F791B1E655EE9DDED2 /* UIButton+UnitTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+UnitTests.m"; sourceTree = "<group>"; };
 		5304234B6C57A8AB4E483D9D /* DinnerServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DinnerServiceImpl.h; sourceTree = "<group>"; };
 		5304235E51912E3E709B8194 /* DinnerListController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DinnerListController.xib; sourceTree = "<group>"; };
 		53042407B7C985CF54215CEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		53042456B79927F274F99143 /* DinnerSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DinnerSessionManager.m; sourceTree = "<group>"; };
 		53042462A86D87BFE4D4A3B9 /* DinnerService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DinnerService.h; sourceTree = "<group>"; };
 		530424A06BEA775DEFB51F04 /* ReactiveDinnerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactiveDinnerTests.m; sourceTree = "<group>"; };
+		530424B0804A92337D56BEE9 /* AddDinnerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddDinnerViewController.m; sourceTree = "<group>"; };
 		530424D88906CFED072686FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		53042523F0C948065B808F21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		53042638D5BABE0958C93205 /* UIButton+UnitTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+UnitTests.h"; sourceTree = "<group>"; };
 		53042656DFB8023A079A5CAF /* DinnerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DinnerManager.m; sourceTree = "<group>"; };
 		530426DDA9DE1127EE3C1760 /* DinnerListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DinnerListController.h; sourceTree = "<group>"; };
 		53042736FE304B8183475667 /* DinnerListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DinnerListController.m; sourceTree = "<group>"; };
+		5304273BA369AD2E89665ECC /* AddDinnerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddDinnerViewController.h; sourceTree = "<group>"; };
 		530427ABC85443F23084E6FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		53042981545D0DBDFF2A32FD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		530429A5F29E7F1EFD54E503 /* ReactiveDinner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveDinner.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +129,8 @@
 			children = (
 				5304217BBC645F02A90AFC35 /* Supporting Files */,
 				530424A06BEA775DEFB51F04 /* ReactiveDinnerTests.m */,
+				530421F791B1E655EE9DDED2 /* UIButton+UnitTests.m */,
+				53042638D5BABE0958C93205 /* UIButton+UnitTests.h */,
 			);
 			path = ReactiveDinnerTests;
 			sourceTree = "<group>";
@@ -175,6 +183,8 @@
 				53042DA22C32D4CC9B157999 /* DinnerDTO.h */,
 				53042456B79927F274F99143 /* DinnerSessionManager.m */,
 				53042A0BE6058FC7D7C8C4F6 /* DinnerSessionManager.h */,
+				530424B0804A92337D56BEE9 /* AddDinnerViewController.m */,
+				5304273BA369AD2E89665ECC /* AddDinnerViewController.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -375,6 +385,7 @@
 				5304258C1352611FCF48AA0C /* ReactiveDinnerTests.m in Sources */,
 				5304239FF8FC31C3888AF318 /* DinnerListControllerTests.m in Sources */,
 				530422E1AFEFC408088AA25F /* DinnerManagerTests.m in Sources */,
+				53042515B4300ADEA5B67E71 /* UIButton+UnitTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +403,7 @@
 				530421AB2835B8E50033BDE4 /* DinnerSessionManager.m in Sources */,
 				53042F467E46050CC26A7A03 /* DinnerArrayDTO.m in Sources */,
 				53042CA84980298729B7F3B0 /* DinnerAssembly.m in Sources */,
+				530429EE934CC0469B4B4107 /* AddDinnerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
