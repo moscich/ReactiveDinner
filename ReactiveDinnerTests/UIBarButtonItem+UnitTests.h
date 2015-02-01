@@ -4,8 +4,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Typhoon/Typhoon.h>
+#import <UIKit/UIKit.h>
 
-@interface DinnerAssembly : TyphoonAssembly
-- (id)dinnerListViewController;
+@interface UIBarButtonItem (UnitTests)
+- (void)simulateTap;
 @end

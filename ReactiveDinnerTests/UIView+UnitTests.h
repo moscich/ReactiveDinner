@@ -6,8 +6,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface UIButton (UnitTests)
-
-- (void)simulateTap;
-
+@interface UIView (UnitTests)
+- (UIButton *)buttonWithLabelText:(NSString *)text;
+- (UITextField *)textFieldWithAccessibilityLabel:(NSString *)text;
 @end

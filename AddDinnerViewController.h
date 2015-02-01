@@ -6,5 +6,13 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+@class RACCommand;
+@class AddDinnerViewModel;
+@class RACSignal;
+
 @interface AddDinnerViewController : UIViewController
+
+@property (nonatomic, strong) AddDinnerViewModel *viewModel;
+
+@property(nonatomic, strong) RACSignal *completeSignal;
 @end

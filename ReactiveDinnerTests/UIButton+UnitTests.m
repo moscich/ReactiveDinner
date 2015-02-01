@@ -1,17 +1,15 @@
 //
-// Created by Marek Moscichowski on 31.01.15.
+// Created by Marek Moscichowski on 01.02.15.
 // Copyright (c) 2015 Marek Mościchowski. All rights reserved.
 //
 
-#import <objc/message.h>
 #import "UIButton+UnitTests.h"
 
 
-@implementation UIBarButtonItem (UnitTests)
+@implementation UIButton (UnitTests)
 
 - (void)simulateTap {
-#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-  [self.target performSelector:self.action];
+  [self sendActionsForControlEvents:UIControlEventTouchUpInside];
 }
 
 @end

@@ -15,8 +15,10 @@
 #import "DinnerDTO.h"
 #import "DinnerAssembly.h"
 #import "TyphoonPatcher.h"
-#import "UIButton+UnitTests.h"
+#import "UIBarButtonItem+UnitTests.h"
 #import "AddDinnerViewController.h"
+#import "UIView+UnitTests.h"
+#import "UIButton+UnitTests.h"
 
 @interface DinnerListControllerTests : XCTestCase
 
@@ -60,12 +62,33 @@
   [partialMock verify];
 }
 
+- (void)test_whenAddDinnerControllerHitSend_sendDinnerToWeb{
+  id mockNetwork = [self mockDinnerSessionManagerExpectingGET:@"/dinners" parameters:@{@"title":@"Test Title", @"additionalInfo":@"Test Additional Info"}];
+  [self patchNetworkCallsWithObject:mockNetwork];
+  self.dinnerListController = [self.factory componentForType:[DinnerListController class]];
+  [self.dinnerListController view];
+  [self.dinnerListController.navigationItem.rightBarButtonItem simulateTap];
+
+  AddDinnerViewController *addDinnerViewController = [self.factory componentForType:[AddDinnerViewController class]];
+  [addDinnerViewController.view textFieldWithAccessibilityLabel:@"Title"].text = @"Test Title";
+  [addDinnerViewController.view textFieldWithAccessibilityLabel:@"Additional Info"].text = @"Test Additional Info";
+  [[addDinnerViewController.view buttonWithLabelText:@"Send"] simulateTap];
+
+  [mockNetwork verify];
+}
+
 - (void)patchNetworkCallsWithObject:(id)object {
   TyphoonPatcher *patcher = [TyphoonPatcher new];
   [patcher patchDefinitionWithKey:@"AFHttpSessionManager" withObject:^id {
     return object;
   }];
   [self.factory attachPostProcessor:patcher];
+}
+
+- (id)mockDinnerSessionManagerExpectingGET:(NSString *)urlString parameters:(NSDictionary *)parameters {
+  id mock = [OCMockObject mockForClass:[AFHTTPSessionManager class]];
+  [[mock expect] POST:urlString parameters:parameters success:OCMOCK_ANY failure:OCMOCK_ANY];
+  return mock;
 }
 
 - (id)stubTestDinnersSessionMenager {
@@ -90,10 +113,12 @@
   return @"{  "
           "   \"dinners\":[  "
           "      {  "
-          "         \"title\":\"Test dinner 1\""
+          "         \"title\":\"Test dinner 1\","
+          "         \"additionalInfo\":\"Test Additional Info\""
           "      },"
           "      {  "
-          "         \"title\":\"Test dinner 2\""
+          "         \"title\":\"Test dinner 2\","
+          "         \"additionalInfo\":\"Test Additional Info 2\""
           "      }"
           "   ]"
           "}";
