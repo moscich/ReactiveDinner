@@ -7,6 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddDinnerViewController">
             <connections>
                 <outlet property="button" destination="x4a-MD-h3i" id="2PR-IO-s8x"/>
+                <outlet property="cancelButton" destination="qNO-dN-v0W" id="Tn9-fP-9tF"/>
                 <outlet property="textField" destination="kS8-MS-TOd" id="DeB-fc-1cH"/>
                 <outlet property="textField2" destination="vQu-Vd-jPz" id="cxd-Zk-Zmw"/>
                 <outlet property="view" destination="iN0-l3-epB" id="kSC-sw-FJR"/>
@@ -41,14 +42,22 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNO-dN-v0W">
+                    <rect key="frame" x="276" y="20" width="48" height="30"/>
+                    <state key="normal" title="Cancel">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="vQu-Vd-jPz" firstAttribute="top" secondItem="kS8-MS-TOd" secondAttribute="bottom" constant="8" id="7i1-4e-Y96"/>
                 <constraint firstAttribute="centerY" secondItem="x4a-MD-h3i" secondAttribute="centerY" constant="100" id="J76-YR-UWO"/>
+                <constraint firstAttribute="centerX" secondItem="qNO-dN-v0W" secondAttribute="centerX" id="Ks8-jY-oju"/>
                 <constraint firstAttribute="centerX" secondItem="kS8-MS-TOd" secondAttribute="centerX" id="NiJ-Ho-ZjM"/>
                 <constraint firstAttribute="centerX" secondItem="x4a-MD-h3i" secondAttribute="centerX" id="fUj-7r-553"/>
                 <constraint firstItem="kS8-MS-TOd" firstAttribute="top" secondItem="x4a-MD-h3i" secondAttribute="bottom" constant="8" id="htq-3B-9px"/>
+                <constraint firstItem="qNO-dN-v0W" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" symbolic="YES" id="q96-fu-dIn"/>
                 <constraint firstAttribute="centerX" secondItem="vQu-Vd-jPz" secondAttribute="centerX" id="qE9-Ps-IWx"/>
             </constraints>
         </view>

@@ -36,4 +36,18 @@
     [self waitForExpectationsWithTimeout:0 handler:nil];
 }
 
+- (void)test_completeSignal_whenCancel_returnsError{
+    AddDinnerViewController *dinnerViewController = [AddDinnerViewController new];
+    XCTestExpectation *expectation = [self expectationWithDescription:@"signal"];
+    [dinnerViewController.completeSignal subscribeNext:^(DinnerDTO *dinner) {
+    }
+    error:^(NSError *error) {
+      [expectation fulfill];
+    }];
+
+    [[dinnerViewController.view buttonWithLabelText:@"Cancel"] simulateTap];
+
+    [self waitForExpectationsWithTimeout:0 handler:nil];
+}
+
 @end
